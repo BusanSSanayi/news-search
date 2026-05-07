@@ -13,7 +13,7 @@ from supabase import create_client
 st.set_page_config(page_title="AI 최신 뉴스 수집기", page_icon="📰", layout="wide")
 
 # API 및 DB 연결 (st.secrets 활용)
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["AIzaSyBHyt9puoJ4hpsQlcw2bSlDdR1ntsBx2ZY"]
 SUPABASE_URL = st.secrets["https://spmnamruogdozmwjgcue.supabase.co"]
 SUPABASE_KEY = st.secrets["sb_publishable_HNtPEpMrydV4zKa7SmXxpg_ZIJzt-fc"]
 
