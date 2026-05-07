@@ -14,8 +14,8 @@ st.set_page_config(page_title="AI 최신 뉴스 수집기", page_icon="📰", la
 
 # API 및 DB 연결 (st.secrets 활용)
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
-SUPABASE_URL = st.secrets["SUPABASE_URL"]
-SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
+SUPABASE_URL = st.secrets["https://spmnamruogdozmwjgcue.supabase.co"]
+SUPABASE_KEY = st.secrets["sb_publishable_HNtPEpMrydV4zKa7SmXxpg_ZIJzt-fc"]
 
 # 클라이언트 초기화
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
