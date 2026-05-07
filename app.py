@@ -13,15 +13,15 @@ from supabase import create_client
 st.set_page_config(page_title="AI 최신 뉴스 수집기", page_icon="📰", layout="wide")
 
 # API 및 DB 연결 (st.secrets 활용)
-GEMINI_API_KEY = st.secrets["AIzaSyBHyt9puoJ4hpsQlcw2bSlDdR1ntsBx2ZY"]
-SUPABASE_URL = st.secrets["https://spmnamruogdozmwjgcue.supabase.co"]
-SUPABASE_KEY = st.secrets["sb_publishable_HNtPEpMrydV4zKa7SmXxpg_ZIJzt-fc"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 # 클라이언트 초기화
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
-st.title("📰 AI 최신 뉴스 검색 과 자동 저장기")
+st.title("📰 AI 최신 뉴스 검색 & 자동 저장기")
 st.markdown("키워드를 검색하면 Gemini가 구글 검색을 통해 가장 최신 뉴스 2건을 요약하고 DB에 자동 저장합니다.")
 
 # ----------------------------------------------------
